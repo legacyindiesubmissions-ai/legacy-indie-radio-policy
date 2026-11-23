@@ -39,11 +39,11 @@ footer{text-align:center;color:#4CAF50;font-size:11px;margin-top:30px;position:r
     </div>
   </div>
 
-  <div class="updated">Last updated: 19 November 2026</div>
+  <div class="updated">Last updated: 23 November 2026</div>
 
   <div class="card">
     <div class="label">The Short Version</div>
-    <p>Legacy Indie Radio is an independent radio station. The Legacy Indie Live app is free. Starting with version 1.5.0 it is ad-supported: it can show a banner ad served by Google AdMob, and when an ad is requested, Google's ad software collects some device information to show and measure it &mdash; see <strong>Advertising</strong> below. You do not need to create an account to listen.</p>
+    <p>Legacy Indie Radio is an independent radio station. The Legacy Indie Live app is free. It is ad-supported: starting with version 1.5.2 it shows ads served by <strong>Start.io</strong> (a banner at the bottom of the screen, and at most one full-screen ad when you open the app, no more than once every 45 minutes and never while music is playing). When an ad is requested, Start.io's ad software collects some device information to show and measure it &mdash; see <strong>Advertising</strong> below. You do not need to create an account to listen.</p>
     <p>Apart from advertising, the personal information we handle is what you type into the app yourself &mdash; a chat nickname, chat messages, song requests, and dedications &mdash; plus a record of listening connections (IP address, player type, approximate location and listening times), described below.</p>
   </div>
 
@@ -68,16 +68,17 @@ footer{text-align:center;color:#4CAF50;font-size:11px;margin-top:30px;position:r
 
   <div class="card">
     <div class="label">Advertising</div>
-    <p>Versions 1.5.0 and later of the app include the Google Mobile Ads SDK and can show a banner ad at the bottom of the screen, served by <strong>Google AdMob</strong>. Earlier versions contain no advertising code and collect none of the information below. The banner never covers the player or the chat.</p>
-    <p>Whenever the app requests an ad, the SDK automatically collects and sends to Google:</p>
+    <p>Version 1.5.2 and later of the app include the <strong>Start.io</strong> ad SDK. It shows a banner at the bottom of the screen (it never covers the player or the chat) and, when you open the app, at most one full-screen ad every 45 minutes &mdash; never on the first launch and never while the stream is playing. Every full-screen ad can be closed. Versions 1.5.0&ndash;1.5.1 contained Google's ad SDK but never showed ads; versions before 1.5.0 contain no advertising code.</p>
+    <p>When the app requests an ad, the Start.io SDK collects and sends to Start.io:</p>
     <ul>
-      <li>Your device's IP address, which may be used to estimate your general location.</li>
-      <li>App interactions, such as app launches and taps on ads.</li>
-      <li>Diagnostic information about how the app and the SDK are performing.</li>
-      <li>Device identifiers: the Android advertising ID and the app set ID.</li>
+      <li>Device identifiers: the Android advertising ID.</li>
+      <li>Your IP address, which may be used to estimate your general location (country, region, city).</li>
+      <li>Device and network information, such as device model, operating system and version, language, time zone, mobile carrier and network/Wi-Fi connection details.</li>
+      <li>Information about this app (its name and category) and your interactions with ads, such as impressions and taps.</li>
     </ul>
-    <p>Google uses this information for advertising, analytics, and fraud prevention. It is encrypted in transit. How Google handles it is described in <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
-    <p>Before any ad is requested, the app checks Google's consent requirements for your region. While ads are enabled and where privacy law requires it (for example in the EEA, the UK, and some US states), an <strong>Ad privacy choices</strong> link appears at the bottom of the chat tab so you can review or change your choices, including opting out of the sale or sharing of your data for personalized ads.</p>
+    <p>The app does <strong>not</strong> ask for location, Bluetooth, contacts or other sensitive permissions, so the SDK cannot read your precise (GPS) location through this app.</p>
+    <p>Start.io uses this information to serve and personalize ads, measure them, cap how often you see them, and detect fraud, and shares it with advertisers and its advertising partners as described in the <a href="https://www.start.io/policy/privacy-policy/">Start.io Privacy Policy</a>. Listeners in the EEA, the UK and Switzerland are shown <strong>non-personalized ads only</strong>.</p>
+    <p>You can opt out of personalized ads from Start.io at any time by emailing <a href="mailto:privacy@start.io">privacy@start.io</a> or using the options in the Start.io Privacy Policy, and you can reset or delete your advertising ID in your device's Android settings.</p>
   </div>
 
   <div class="card">
@@ -92,7 +93,7 @@ footer{text-align:center;color:#4CAF50;font-size:11px;margin-top:30px;position:r
 
   <div class="card">
     <div class="label">Who We Share It With</div>
-    <p>When ads are requested, the advertising information described above is collected by and shared with Google for advertising, analytics, and fraud prevention. We do not sell, rent, or transfer anything you type into the app &mdash; your nickname, chat messages, requests, dedications, or reports &mdash; to third parties. Chat messages, requests, and dedications are, by their nature, shown publicly to other listeners &mdash; please do not put anything private into them.</p>
+    <p>When ads are requested, the advertising information described above is collected by Start.io and shared with advertisers and Start.io's advertising partners for advertising, measurement, and fraud prevention. We do not sell, rent, or transfer anything you type into the app &mdash; your nickname, chat messages, requests, dedications, or reports &mdash; to third parties. Chat messages, requests, and dedications are, by their nature, shown publicly to other listeners &mdash; please do not put anything private into them.</p>
   </div>
 
   <div class="card">
@@ -108,7 +109,7 @@ footer{text-align:center;color:#4CAF50;font-size:11px;margin-top:30px;position:r
       <li>Report any chat message for station review.</li>
       <li>Clear the app's data to erase your nickname and block list.</li>
       <li>Reset or delete your advertising ID in your device's Android settings.</li>
-      <li>Where shown, use <strong>Ad privacy choices</strong> at the bottom of the chat tab to change your ad consent or opt out.</li>
+      <li>Opt out of personalized ads from Start.io by emailing <a href="mailto:privacy@start.io">privacy@start.io</a>.</li>
       <li>Ask us to delete anything you have sent, using the contact address below.</li>
     </ul>
   </div>
